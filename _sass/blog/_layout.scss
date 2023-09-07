@@ -118,6 +118,10 @@
   float: left;
   width: 50%;
   padding: 10px;
+
+  .maybe-float-right {
+    float: right;
+  }
 }
 
 .two-column-row:after {
@@ -133,6 +137,10 @@
    */
   .two-column-col {
     width: 100%;
+
+    .maybe-float-right {
+      float: initial;
+    }
   }
 }
 
