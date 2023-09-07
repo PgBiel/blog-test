@@ -1,13 +1,13 @@
-title: "Blog Test"
-author: "Pg On Test"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+# title: "Blog Test"
+# author: "Pg On Test"
+# description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
+# email: "example@mail.com"
+# twitter_username: "twitteruser"
+# github_username: "githubuser"
+# linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
 #instagram_username: username
@@ -15,28 +15,62 @@ linkedin_username: "linkedinuser"
 #youtube_username: username
 #googleplus_username: +username
 
+title: Pg's Test Blog
+author: Pg
+description: Test Blog
+show_downloads: true
+
+baseurl: "/blog-test" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://pgbiel.github.io" # change this to the base hostname & protocol for your site
+
+
+# google_analytics:
+
+# cayman-blog date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+cayman-blog:
+  date_format: "%b %-d, %Y"
+
+theme: # forked from cayman-blog
+
+# social
+author: PgBiel
+# image: /thumbnail-jumbo.png
+twitter:
+  username: thisdoes.not.exist!!
+
+plugins:
+  - jekyll-target-blank
+  - jekyll-feed
+
+target-blank:
+    rel: nofollow
+
+header_page_refs: ['now', 'about', 'contact']
+
+
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "minima"
+# theme: "minima"
 
 rss: rss
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
+# kramdown:
+#   syntax_highlighter_opts:
+#     disable: true
     
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
 
 titles_from_headings:
   strip_title: true
   collections: true
-
-defaults:
-  - scope:
-      path: ""
-      type: post
-    values:
-      tags: Other
+#
+# defaults:
+#   - scope:
+#       path: ""
+#       type: post
+#     values:
+#       tags: Other
