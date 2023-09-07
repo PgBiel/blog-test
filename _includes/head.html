@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="https://pgbiel.github.io/blog-test/"/>
+  <base href="/blog-test/"/>
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
@@ -11,14 +11,13 @@
   {%- endif -%}
 
   <!-- highlight.js support -->
-  <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
-  <!-- <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" /> -->
+  <link rel="stylesheet" href="js/highlightjs/styles/github.css">
+  <!-- <link rel="stylesheet" href="js/highlightjs/styles/ssms.css" /> -->
 
-  <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
+  <script type="text/javascript" src="{{ "/js/highlightjs/highlight.min.js" | relative_url }}"></script>
 
-  <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
+  <script type="text/javascript" src="{{ "/js/highlightjs/languages/bash.min.js" | relative_url }}></script>
+  <script type="text/javascript" src="{{ "/js/highlightjs/languages/sql.min.js" | relative_url }}></script>
 
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
