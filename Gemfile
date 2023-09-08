@@ -13,4 +13,5 @@ group :jekyll_plugins do
     gem 'jekyll-seo-tag'
     gem 'jekyll-target-blank'
     gem 'jekyll-archives'
+    gem 'jekyll-titles-from-headings'
 end
