@@ -42,6 +42,8 @@ twitter:
 plugins:
   - jekyll-target-blank
   - jekyll-feed
+  - jekyll-archives
+  - jekyll-sitemap
 
 target-blank:
     rel: nofollow
@@ -59,7 +61,7 @@ rss: rss
 # kramdown:
 #   syntax_highlighter_opts:
 #     disable: true
-    
+
 # plugins:
 #   - jekyll-feed
 #   - jekyll-sitemap
@@ -67,6 +69,22 @@ rss: rss
 titles_from_headings:
   strip_title: true
   collections: true
+
+jekyll-archives:
+  enabled: 'all'
+  layouts:
+    year: year-archive
+    month: month-archive
+    day: day-archive
+    category: tag-archive
+    tag: tag-archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
 #
 # defaults:
 #   - scope:
