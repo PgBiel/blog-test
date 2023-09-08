@@ -20,7 +20,7 @@ layout: default
   </div>
 
   {% if page.tags %}
-    <div><i>Tags: {{ page.tags | join: ", " | capitalize }}</i></div>
+    <div><i>Tags: {{ page.tags | join: ", " | capitalize | escape }}</i></div>
   {% endif %}
 
   {% if site.disqus.shortname %}
