@@ -1,4 +1,4 @@
-- Files under `_posts` and under `assets/pics` are licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- Files under `_posts` and under `assets/pics` are licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - Files under `assets/ext` may have varying licenses depending on their sources.
 - Any other files in this repository not mentioned in this LICENSE.md file and without an explicit license are licensed under the MIT license below.
 
