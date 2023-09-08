@@ -19,6 +19,10 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.tags %}
+    <div><i>Tags: {{ page.tags | join: ", " | capitalize }}</i></div>
+  {% endif %}
+
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
