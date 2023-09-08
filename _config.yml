@@ -86,10 +86,9 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
 
-#
-# defaults:
-#   - scope:
-#       path: ""
-#       type: post
-#     values:
-#       tags: Other
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
