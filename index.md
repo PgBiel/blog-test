@@ -8,4 +8,4 @@
 layout: home
 ---
 
-Pg's test blog. Uses the Cayman theme.
+Pg's test blog. Uses the Cayman theme. Welcome
