@@ -88,10 +88,12 @@
                 {% endif %}
             </h2>
             {% if page.tags %}
+                <div class="post-tags">
                 {% for tag in page.tags %}
                     {% capture safetag %}{{ tag | url_encode }}{% endcapture %}
                     <a href="{{ '/tag/' | append: safetag | absolute_url }}" class="btn">{{ tag | capitalize | escape }}</a>
                 {% endfor %}
+                </div>
             {% endif %}
             {% endif %}
             <!-- End: Post tagline -->
