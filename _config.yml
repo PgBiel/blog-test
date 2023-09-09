@@ -36,6 +36,9 @@ theme: # forked from cayman-blog
 # social
 author: PgBiel
 # image: /thumbnail-jumbo.png
+github:
+  owner_url: "https://github.com/PgBiel"
+  owner_name: PgBiel
 twitter:
   username: thisdoes.not.exist!!
 
