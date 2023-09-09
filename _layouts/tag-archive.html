@@ -2,13 +2,13 @@
 layout: default
 ---
 {% assign tag = page.title %}
-{% capture tag_body %}
-    {% if page.type == 'tag' and site.data.tag_list[tag] %}
+{% capture tag_body -%}
+    {%- if page.type == 'tag' and site.data.tag_list[tag] -%}
     {{ site.data.tag_list[tag] }}
-    {% else %}
+    {%- else -%}
     {{ tag | capitalize }}
-    {% endif %}
-{% endcapture %}
+    {%- endif -%}
+{%- endcapture %}
 <h1>Archive of posts with {{ page.type | escape }} '{{ tag_body | escape }}'</h1>
 <ul class="posts">
   {% for post in page.posts %}
