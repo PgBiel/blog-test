@@ -1,12 +1,20 @@
 ---
 layout: default
 ---
-<h1>Archive of posts with {{ page.type }} '{{ page.title }}'</h1>
+{% assign tag = page.title %}
+{% capture tag_body %}
+    {% if page.type == 'tag' and site.data.tag_list[tag] %}
+    {{ site.data.tag_list[tag] }}
+    {% else %}
+    {{ tag | capitalize }}
+    {% endif %}
+{% endcapture %}
+<h1>Archive of posts with {{ page.type | escape }} '{{ tag_body | escape }}'</h1>
 <ul class="posts">
   {% for post in page.posts %}
     <li>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" | escape }}</span>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
     </li>
   {% endfor %}
 </ul>
