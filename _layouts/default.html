@@ -84,12 +84,12 @@
                     {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
                     {{ page.date | date: date_format }}
                 </time>
-                {% assign page_author = page.author | default: site.author | default: nil | escape %}
+                {% assign page_author = page.author | default: site.author | default: nil %}
                 {% if page_author.name %}
                 {% assign page_author = page_author.name %}
                 {% endif %}
                 {% if page_author %}
-                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page_author }}</span></span>
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page_author | escape }}</span></span>
                 {% endif %}
             </h2>
 
