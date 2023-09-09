@@ -93,7 +93,7 @@
                 <div class="post-tags">
                 {% for tag in page.tags %}
                     {% capture safetag %}{{ tag | url_encode }}{% endcapture %}
-                    <a href="{{ '/tag/' | append: safetag | absolute_url }}" class="btn">{{ tag | capitalize | escape }}</a>
+                    <a href="{{ '/tag/' | append: safetag | absolute_url }}" class="tag-btn">{{ tag | capitalize | escape }}</a>
                 {% endfor %}
                 </div>
             {% endif %}
