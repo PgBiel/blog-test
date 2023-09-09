@@ -1,0 +1,64 @@
+@import "variables";
+@import "mixins";
+
+.post-tags {
+    margin-top: 1.3rem;
+}
+
+.tag-btn {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  padding: 0.5rem 0.75rem;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  + .tag-btn {
+    margin-left: 1rem;
+  }
+
+  @include large {
+  }
+
+  @include medium {
+    font-size: 0.9rem;
+  }
+
+  @include small {
+    font-size: 0.9rem;
+
+    + .tag-btn {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+}
+
+.main-content {
+  ul,
+  ol {
+    margin-top: 0;
+    padding: 0rem 0rem 0.2rem 1.25rem;
+  }
+
+  li {
+    margin-left: 0.25rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.site-footer {
+  .footer-part {
+    padding: 0.69rem;
+  }
+}
