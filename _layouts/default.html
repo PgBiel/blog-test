@@ -93,7 +93,7 @@
             {% if page.tags %}
                 <div class="post-tags">
                 {% for tag in page.tags %}
-                    {% # lowercase tag link as that's what jekyll-archives uses %}
+                    {% comment %}lowercase tag link as that's what jekyll-archives uses{% endcomment %}
                     {% capture safetag %}{{ tag | downcase | url_encode }}{% endcapture %}
                     {% capture tag_body %}
                         {% if site.data.tag_list[tag] %}
