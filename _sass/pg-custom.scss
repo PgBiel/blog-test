@@ -47,7 +47,6 @@
 .main-content {
   ul,
   ol {
-    margin-top: 0;
     padding: 0rem 0rem 0.2rem 1.25rem;
   }
 
@@ -69,4 +68,18 @@
   padding: 0.5rem 1.85rem;
   border: 0.1rem solid $toc-border-color;
   border-radius: 0.25rem;
+
+  .toc-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .post-toc-list {
+    margin-top: 0.5rem;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
 }
