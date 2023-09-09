@@ -22,7 +22,11 @@ layout: default
       {% toc %}
     </div>
     {% endif %}
-    {{ content }}
+    {% comment %}
+      Anchor headings for a clickable # near headings.
+      Note that 'content' below corresponds to the original '{{ content }}'.
+    {% endcomment %}
+    {% include anchor_headings.html html=content anchorBody="#" %}
   </div>
 
   {% if page.tags %}
