@@ -89,11 +89,19 @@
                 • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page_author }}</span></span>
                 {% endif %}
             </h2>
+
             {% if page.tags %}
                 <div class="post-tags">
                 {% for tag in page.tags %}
                     {% capture safetag %}{{ tag | url_encode }}{% endcapture %}
-                    <a href="{{ '/tag/' | append: safetag | absolute_url }}" class="tag-btn">{{ tag | capitalize | escape }}</a>
+                    {% capture tag_body %}
+                        {% if site.data.tag_list[tag] %}
+                        {{ site.data.tag_list[tag] }}
+                        {% else %}
+                        {{ tag | capitalize }}
+                        {% endif %}
+                    {% endcapture %}
+                    <a href="{{ '/tag/' | append: safetag | absolute_url }}" class="tag-btn">{{ tag_body | escape }}</a>
                 {% endfor %}
                 </div>
             {% endif %}
