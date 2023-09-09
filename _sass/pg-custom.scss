@@ -62,3 +62,11 @@
     padding: 0.69rem;
   }
 }
+
+.post-toc {
+  background-color: $toc-bg-color;
+  margin: 0.1rem 0rem;
+  padding: 0.5rem 1.85rem;
+  border: 0.1rem solid $toc-border-color;
+  border-radius: 0.25rem;
+}

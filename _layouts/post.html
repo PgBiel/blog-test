@@ -16,7 +16,12 @@ layout: default
   </header> -->
 
   <div itemprop="articleBody">
-    {{ content | toc }}
+    {% if page.toc %}
+    <div class="post-toc">
+      {% toc %}
+    </div>
+    {% endif %}
+    {{ content }}
   </div>
 
   {% if page.tags %}
