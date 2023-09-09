@@ -185,7 +185,16 @@ a {
   .btn {
     padding: 0.5rem 0.75rem;
 
+    @include large {
+      padding: 0.5rem 0.75rem;
+    }
+
+    @include medium {
+      padding: 0.5rem 0.75rem;
+    }
+
     @include small {
+      padding: 0.5rem 0.75rem;
       display: inline-block;
       width: initial;
     }
