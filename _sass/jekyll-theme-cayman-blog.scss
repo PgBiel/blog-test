@@ -181,6 +181,15 @@ a {
 
 .post-tags {
   margin-top: 2rem;
+
+  .btn {
+    padding: 0.5rem 0.75rem;
+
+    @include small {
+      display: inline-block;
+      width: initial;
+    }
+  }
 }
 
 .main-content {
