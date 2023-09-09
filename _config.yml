@@ -16,7 +16,6 @@
 #googleplus_username: +username
 
 title: Pg's Test Blog
-author: Pg
 description: Test Blog
 show_downloads: true
 
@@ -34,7 +33,8 @@ cayman-blog:
 theme: # forked from cayman-blog
 
 # social
-author: PgBiel
+author:
+  name: PgBiel
 # image: /thumbnail-jumbo.png
 github:
   owner_url: "https://github.com/PgBiel"
@@ -46,6 +46,7 @@ plugins:
   - jekyll-target-blank
   - jekyll-feed
   - jekyll-toc
+  - jekyll-seo-tag
   - jekyll-archives
   - jekyll-sitemap
   - jekyll-titles-from-headings
