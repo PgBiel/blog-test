@@ -15,6 +15,31 @@ layout: default
       {% endif %}</p>
   </header> -->
 
+  <!-- meta stuff -->
+  <meta itemprop="headline" content="{{ page.title }}"/>
+
+  {% if page.tagline %}
+  <meta itemprop="description" content="{{ page.tagline }}"/>
+  {% endif %}
+
+  {% capture formatted_date -%}
+    {%- assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" -%}
+    {{ page.date | date: date_format }}
+  {%- endcapture %}
+  <meta itemprop="dateCreated pubdate datePublished" content="{{ formatted_date }}" />
+
+  {% assign page_author = page.author | default: site.author | default: nil %}
+  {% if page_author.name %}
+  {% assign page_author = page_author.name %}
+  {% endif %}
+  {% if page_author %}
+  <div itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="{{ page_author }}"/>
+  </div>
+  {% endif %}
+
+  <!-- end meta stuff -->
+
   <div itemprop="articleBody">
     {% if page.toc %}
     <div class="post-toc">
