@@ -11,6 +11,8 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 
 ---
 
+## Header 2
+
 ### This is a header
 
 #### Some SQL Code
