@@ -204,6 +204,10 @@
 .highlight .w {
   color: #bbbbbb;
 }
-.highlight {
-  background-color: #f8f8f8;
+
+@include define-light-colors {
+  .highlight {
+    // avoid white corners on dark mode (restrict this to light mode)
+    background-color: #f8f8f8;
+  }
 }
