@@ -17,3 +17,33 @@
         @content;
     }
 }
+
+@mixin prefers-dark {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
+@mixin define-light-colors {
+    html, html[data-theme="light"] {
+        @content;
+    }
+
+    @include prefers-dark {
+        html[data-theme="light"] {
+            @content;
+        }
+    }
+}
+
+@mixin define-dark-colors {
+    html[data-theme="dark"] {
+        @content;
+    }
+
+    @include prefers-dark {
+        html, html[data-theme="dark"] {
+            @content;
+        }
+    }
+}
