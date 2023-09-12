@@ -3,6 +3,7 @@
 
 // General
 $site-bg-color: #fff !default;
+$site-nav-icon-color: #000 !default;
 
 // Headers
 $header-heading-color: #fff !default;
@@ -31,6 +32,7 @@ $hr-border-color: #eff0f1 !default;
 @include define-light-colors {
     // General
     --site-bg-color: #fff;
+    --site-nav-icon-color: #000;
 
     // Headers
     --header-heading-color: #fff;
@@ -60,6 +62,7 @@ $hr-border-color: #eff0f1 !default;
 @include define-dark-colors {  // generally taken from dark reader
     // General
     --site-bg-color: #181a1b;
+    --site-nav-icon-color: #beb9b0;
 
     // Headers
     --header-heading-color: #fff;

@@ -7,6 +7,11 @@ html, body {
   background-color: var(--site-bg-color);
 }
 
+// appropriate color for the menu icon
+// (must be gray on dark mode, black on light mode)
+.site-nav .menu-icon svg {
+  fill: $site-nav-icon-color;
+  fill: var(--site-nav-icon-color);
 }
 
 .post-tags {
