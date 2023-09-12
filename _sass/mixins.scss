@@ -1,4 +1,4 @@
-@import "variables";
+@import "base-variables";
 
 @mixin large {
     @media screen and (min-width: #{$large-breakpoint}) {
