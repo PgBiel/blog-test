@@ -1,24 +1,16 @@
 @import "variables";
 @import "mixins";
 
-@include define-light-colors {
-  background-color: inherit;
-
-  body {
-    background-color: inherit;
-  }
+html, body {
+  // fallback for older browsers
+  background-color: $site-bg-color;
+  background-color: var(--site-bg-color);
 }
 
-@include define-dark-colors {
-  background-color: $dark-site-bg-color;  // dark background
-
-  body {
-    background-color: $dark-site-bg-color;
-  }
 }
 
 .post-tags {
-    margin-top: 1.3rem;
+  margin-top: 1.3rem;
 }
 
 .tag-btn {

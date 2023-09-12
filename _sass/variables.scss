@@ -2,7 +2,7 @@
 @import "mixins";
 
 // General
-$dark-site-bg-color: #181a1b !default;
+$site-bg-color: #fff !default;
 
 // Headers
 $header-heading-color: #fff !default;
@@ -29,6 +29,9 @@ $toc-border-color: #dce6f0 !default;
 $hr-border-color: #eff0f1 !default;
 
 @include define-light-colors {
+    // General
+    --site-bg-color: #fff;
+
     // Headers
     --header-heading-color: #fff;
     --header-bg-color: #159957;
@@ -55,6 +58,9 @@ $hr-border-color: #eff0f1 !default;
 }
 
 @include define-dark-colors {  // generally taken from dark reader
+    // General
+    --site-bg-color: #181a1b;
+
     // Headers
     --header-heading-color: #fff;
     --header-bg-color: #159957;
