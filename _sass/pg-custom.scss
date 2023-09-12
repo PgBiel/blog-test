@@ -1,6 +1,12 @@
 @import "variables";
 @import "mixins";
 
+@include prefers-dark {
+  html, body {
+    background-color: #181a1b;  // dark background
+  }
+}
+
 .post-tags {
     margin-top: 1.3rem;
 }
