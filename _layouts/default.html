@@ -125,14 +125,14 @@
                         <!-- Github icon -->
                         <span class="my-span-icon">
                             <a href="{{ site.github.owner_url }}" aria-label="{{ site.github.owner_name }}'s GitHub" title="{{ site.github.owner_name }}'s GitHub">
-                                {% include "icons/github.svg" %}
+                                {% include icons/github.svg %}
                             </a>
                         </span>
 
                         <!-- Twitter icon -->
                         <span class="my-span-icon">
                             <a href="https://twitter.com/{{ site.twitter.username | url_encode }}" aria-label="{{ site.github.owner_name }}'s Twitter" title="{{ site.github.owner_name }}'s Twitter">
-                                {% include "icons/twitter.svg" %}
+                                {% include icons/twitter.svg %}
                             </a>
                         </span>
 
@@ -140,7 +140,7 @@
                         {% if site.mastodon and site.mastodon.instance and site.mastodon.username %}
                         <span class="my-span-icon">
                             <a href="https://{{ site.mastodon.instance | url_encode }}/@{{ site.mastodon.username | url_encode }}" aria-label="{{ site.github.owner_name }}'s Mastodon" title="{{ site.github.owner_name }}'s Mastodon">
-                                {% include "icons/mastodon.svg" %}
+                                {% include icons/mastodon.svg %}
                             </a>
                         </span>
                         {% endif %}
@@ -149,7 +149,7 @@
                         {% if site.plugins contains "jekyll-feed" %}
                         <span class="my-span-icon">
                             <a href="{{ "/feed.xml" | absolute_url }}" aria-label="RSS feed" title="{{ site.github.owner_name }}'s RSS feed">
-                                {% include "icons/rss.svg" %}
+                                {% include icons/rss.svg %}
                             </a>
                         </span>
                         {% endif %}
@@ -159,7 +159,7 @@
                         {% if contact_page.title %}
                         <span class="my-span-icon">
                             <a href="{{ contact_page.url | absolute_url }}" aria-label="Contact" title="Contact {{ site.github.owner_name }}">
-                                {% include "icons/contact.svg" %}
+                                {% include icons/contact.svg %}
                             </a>
                         </span>
                         {% endif %}
