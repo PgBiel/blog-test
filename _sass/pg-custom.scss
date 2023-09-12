@@ -71,9 +71,12 @@
 }
 
 .post-toc {
+  // fallback for older browsers
+  background-color: $toc-bg-color;
   background-color: var(--toc-bg-color);
   margin: 0.1rem 0rem;
   padding: 0.5rem 1.1rem;
+  border: 0.1rem solid $toc-border-color;
   border: 0.1rem solid var(--toc-border-color);
   border-radius: 0.25rem;
 

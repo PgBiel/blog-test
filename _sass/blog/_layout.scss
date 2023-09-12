@@ -2,6 +2,8 @@
  * Site header
  */
 .site-header {
+  // fallback for older browsers
+  border-bottom: 1px solid $grey-color-light;
   border-bottom: 1px solid var(--grey-color-light);
   min-height: $spacing-unit * 1.865;
 
@@ -21,6 +23,7 @@
   &,
   &:visited,
   &:hover {
+    color: $text-color;
     color: var(--text-color);
     text-decoration: none;
   }
@@ -39,6 +42,7 @@
   }
 
   .page-link {
+    color: $text-color;
     color: var(--text-color);
     line-height: $base-line-height;
 
@@ -52,7 +56,9 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
+    background-color: $background-color;
     background-color: var(--background-color);
+    border: 1px solid $grey-color-light;
     border: 1px solid var(--grey-color-light);
     border-radius: 5px;
     text-align: right;
@@ -77,6 +83,7 @@
       text-align: center;
 
       > svg path {
+        fill: $grey-color-dark;
         fill: var(--grey-color-dark);
       }
     }
@@ -174,6 +181,7 @@
 
 .post-meta {
   font-size: $small-font-size;
+  color: $grey-color;
   color: var(--grey-color);
 }
 
