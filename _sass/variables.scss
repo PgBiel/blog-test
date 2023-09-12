@@ -1,3 +1,5 @@
+@import "mixins";
+
 // Breakpoints
 $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
@@ -25,3 +27,56 @@ $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
 $toc-border-color: #dce6f0 !default;
 $hr-border-color: #eff0f1 !default;
+
+@include define-light-colors {
+    // Headers
+    --header-heading-color: #fff;
+    --header-bg-color: #159957;
+    --header-bg-color-secondary: #155799;
+
+    // Text
+    --section-headings-color: #159957;
+    --body-text-color: #606c71;
+    --body-link-color: #1e6bb8;
+    --blockquote-text-color: #819198;
+
+    // Code
+    --code-bg-color: #f3f6fa;
+    --code-text-color: #567482;
+
+    // TOC
+    --toc-bg-color: #f3f6fa;
+
+    // Borders
+    --border-color: #dce6f0;
+    --table-border-color: #e9ebec;
+    --toc-border-color: #dce6f0;
+    --hr-border-color: #eff0f1;
+}
+
+@include define-dark-colors {  // generally taken from dark reader
+    // Headers
+    --header-heading-color: #fff;
+    --header-bg-color: #159957;
+    --header-bg-color-secondary: #155799;
+
+    // Text
+    --section-headings-color: rgb(103, 234, 169);
+    --body-text-color: rgb(166, 158, 147);
+    --body-link-color: rgb(101, 172, 230);
+    --blockquote-text-color: rgb(160, 151, 139);
+
+    // Code
+    --code-bg-color: rgb(29, 31, 32);
+    --code-text-color: rgb(164, 156, 144);
+
+    // TOC
+    --toc-bg-color: rgb(29, 31, 32);
+
+    // Borders
+    --border-color: rgb(35, 59, 82);
+    --table-border-color: rgb(54, 58, 61);
+    --toc-border-color: rgb(35, 59, 82);
+    --hr-border-color: rgb(32, 35, 37);
+}
+

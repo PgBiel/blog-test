@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "mixins";
 
 // Define defaults for each variable.
 
@@ -39,6 +40,25 @@ $on-laptop:        54em !default;
 
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
+}
+
+@include define-light-colors {
+  --text-color:       var(--section-headings-color);
+  --background-color: #fdfdfd;
+  --brand-color:      #2a7ae2;
+  --grey-color:       #828282;
+  --grey-color-light: lighten(var(--grey-color), 40%);
+  --grey-color-dark:  darken(var(--grey-color), 25%);
+}
+
+@include define-dark-colors {
+  // taken mostly from Dark Reader
+  --text-color:       var(--section-headings-color);
+  --background-color: rgb(25, 27, 28);
+  --brand-color:      #2a7ae2;  // never used this color lol
+  --grey-color:       rgb(153, 144, 131);
+  --grey-color-light: lighten(var(--grey-color), 40%);
+  --grey-color-dark:  darken(var(--grey-color), 25%);
 }
 
 // Import partials.
