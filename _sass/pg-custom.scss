@@ -1,9 +1,11 @@
 @import "variables";
 @import "mixins";
 
-@include prefers-dark {
-  html, body {
-    background-color: #181a1b;  // dark background
+@include define-dark-colors {
+  background-color: $dark-site-bg-color;  // dark background
+
+  body {
+    background-color: $dark-site-bg-color;
   }
 }
 
