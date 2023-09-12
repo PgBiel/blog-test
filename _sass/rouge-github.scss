@@ -209,7 +209,13 @@
 
 @include define-light-colors {
   .highlight {
-    // avoid white corners on dark mode (restrict this to light mode)
     background-color: #f8f8f8;
+  }
+}
+
+@include define-dark-colors {
+  .highlight {
+    // avoid white corners on dark mode
+    background-color: inherit;
   }
 }
