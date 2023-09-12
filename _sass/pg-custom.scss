@@ -1,6 +1,14 @@
 @import "variables";
 @import "mixins";
 
+@include define-light-colors {
+  background-color: inherit;
+
+  body {
+    background-color: inherit;
+  }
+}
+
 @include define-dark-colors {
   background-color: $dark-site-bg-color;  // dark background
 
