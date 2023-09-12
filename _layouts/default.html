@@ -120,7 +120,7 @@
             <footer class="site-footer">
                 <div class="two-column-row">
                     <div class="two-column-col">
-                        <!-- SVG icons from https://iconmonstr.com -->
+                        <!-- SVG icons from https://iconmonstr.com and https://uxwing.com (mastodon) -->
 
                         <!-- Github icon -->
                         <span class="my-span-icon">
@@ -135,6 +135,15 @@
                                 {% include "icons/twitter.svg" %}
                             </a>
                         </span>
+
+                        <!-- Mastodon icon -->
+                        {% if site.mastodon and site.mastodon.instance and site.mastodon.username %}
+                        <span class="my-span-icon">
+                            <a href="https://{{ site.mastodon.instance | url_encode }}/@{{ site.mastodon.username | url_encode }}" aria-label="{{ site.github.owner_name }}'s Mastodon" title="{{ site.github.owner_name }}'s Mastodon">
+                                {% include "icons/mastodon.svg" %}
+                            </a>
+                        </span>
+                        {% endif %}
 
                         <!-- RSS icon -->
                         {% if site.plugins contains "jekyll-feed" %}

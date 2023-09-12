@@ -41,6 +41,9 @@ github:
   owner_name: PgBiel
 twitter:
   username: thisdoes.not.exist!!
+mastodon:
+  instance: mastodon.social
+  username: PgSuper
 
 plugins:
   - jekyll-target-blank
