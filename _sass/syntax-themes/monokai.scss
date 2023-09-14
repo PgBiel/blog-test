@@ -9,9 +9,8 @@ See https://github.com/pygments/pygments/blob/master/pygments/styles/monokai.py
         background-color: #272822 !important;
     }
 
-    pre code {
-        color: #f8f8f2;  // normal text
-        background-color: #272822;
+    pre > code {
+        color: #f8f8f2 !important;  // normal text
     }
 
     //  .w // Whitespace
