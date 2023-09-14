@@ -18,29 +18,20 @@ See https://github.com/pygments/pygments/blob/master/pygments/styles/monokai.py
 
     //  .x // Other
 
-    .c { color: #959077; } // Comment
+    .c, // Comment
+    .cm, // Comment.Multiline
+    .cp, // Comment.Preproc
+    .c1, // Comment.Single
+    .cs { color: #959077; } // Comment.Special
 
-    // .cm // Comment.Multiline
-
-    // .cp // Comment.Preproc
-
-    // .c1 // Comment.Single
-
-    // .cs // Comment.Special
-
-    .k { color: #66d9ef; } // Keyword
-
-    // .kc // Keyword.Constant
-
-    // .kd // Keyword.Declaration
+    .k, // Keyword
+    .kc, // Keyword.Constant
+    .kd, // Keyword.Declaration
+    .kp, // Keyword.Pseudo
+    .kr, // Keyword.Reserved
+    .kt { color: #66d9ef; } // Keyword.Type
 
     .kn { color: #ff4689; } // Keyword.Namespace
-
-    // .kp // Keyword.Pseudo
-
-    // .kr // Keyword.Reserved
-
-    // .kt // Keyword.Type
 
     .o { color: #ff4689; } // Operator
 
@@ -48,105 +39,63 @@ See https://github.com/pygments/pygments/blob/master/pygments/styles/monokai.py
 
     .p { color: #f8f8f2; } // Punctuation
 
-    .n { color: #f8f8f2; } // Name
+    .n, // Name
+    .nb, // Name.Builtin
+    .bp, // Name.Builtin.Pseudo
+    .ni, // Name.Entity
+    .py, // Name.Property
+    .nl, // Name.Label
+    .nn, // Name.Namespace
+    .nv, // Name.Variable
+    .vc, // Name.Variable.Class
+    .vg, // Name.Variable.Global
+    .vi { color: #f8f8f2; } // Name.Variable.Instance
 
     .na { color: #a6e22e; } // Name.Attribute
-
-    // .nb // Name.Builtin
-
-    // .bp // Name.Builtin.Pseudo
-
     .nc { color: #a6e22e; } // Name.Class
-
     .no { color: #66d9ef; } // Name.Constant
-
     .nd { color: #a6e22e; } // Name.Decorator
-
-    // .ni // Name.Entity
-
     .ne { color: #a6e22e; } // Name.Exception
-
     .nf { color: #a6e22e; } // Name.Function
-
-    // .py // Name.Property
-
-    // .nl // Name.Label
-
-    // .nn // Name.Namespace
-
     .nx { color: #a6e22e; } // Name.Other
-
     .nt { color: #ff4689; } // Name.Tag
 
-    // .nv // Name.Variable
-
-    // .vc // Name.Variable.Class
-
-    // .vg // Name.Variable.Global
-
-    // .vi // Name.Variable.Instance
-
-    .m { color: #ae81ff; } // Number
-
-    // .mf // Number.Float
-
-    // .mh // Number.Hex
-
-    // .mi // Number.Integer
-
-    // .il // Number.Integer.Long
-
-    // .mo // Number.Oct
+    .m, // Number
+    .mf, // Number.Float
+    .mh, // Number.Hex
+    .mi, // Number.Integer
+    .il, // Number.Integer.Long
+    .mo { color: #ae81ff; } // Number.Oct
 
     .l { color: #ae81ff; } // Literal
 
     .ld { color: #e6db74; } // Literal.Date
 
-    .s { color: #e6db74; } // String
-
-    // .sb // String.Backtick
-
-    // .sc // String.Char
-
-    // .sd // String.Doc
-
-    // .s2 // String.Double
+    .s, // String
+    .sb, // String.Backtick
+    .sc, // String.Char
+    .sd, // String.Doc
+    .s2, // String.Double
+    .sh, // String.Heredoc
+    .si, // String.Interpol
+    .sx, // String.Other
+    .sr, // String.Regex
+    .s1, // String.Single
+    .ss { color: #e6db74; } // String.Symbol
 
     .se { color: #ae81ff; } // String.Escape
 
-    // .sh // String.Heredoc
-
-    // .si // String.Interpol
-
-    // .sx // String.Other
-
-    // .sr // String.Regex
-
-    // .s1 // String.Single
-
-    // .ss // String.Symbol
-
-   //  .g // Generic
+    //  .g // Generic
 
     .gd { color: #ff4689; } // Generic.Deleted
-
     .ge { font-style: italic; } // Generic.Emph
-
     // .gr // Generic.Error
-
     // .gh // Generic.Heading
-
     .gi { color: #a6e22e; } // Generic.Inserted
-
     .go { color: #66d9ef; } // Generic.Output
-
     .gp { color: #ff4689; font-weight: bold; } // Generic.Prompt
-
     .gs { font-weight: bold; } // Generic.Strong
-
     .ges { font-weight: bold; font-style: italic; } // Generic.EmphStrong
-
     .gu { color: #959077; } // Generic.Subheading
-
     // .gt // Generic.Traceback
 }
