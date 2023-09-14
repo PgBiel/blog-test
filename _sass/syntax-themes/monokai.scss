@@ -5,8 +5,12 @@ See https://github.com/pygments/pygments/blob/master/pygments/styles/monokai.py
 
 @mixin monokai {
 
-    color: "#f8f8f2";  // normal text
+    pre {
+        background-color: #272822 !important;
+    }
+
     pre code {
+        color: "#f8f8f2" !important;  // normal text
         background-color: #272822;
     }
 
